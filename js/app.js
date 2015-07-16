@@ -16,7 +16,7 @@ var newGame = function(){
 			alert("Hot!");
 		}
 		guessCount++;
-		$("#count").val(guessCount);
+		$("#count").text(guessCount);
 	});
 	console.log(num);
 };
