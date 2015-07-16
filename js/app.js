@@ -14,7 +14,7 @@ var newGame = function(){
 		e.preventDefault();
 		var x = $("#userGuess").val();
 
-		if (x % 1 === 0 && x !== '') {
+		if (x % 1 === 0 && x !== '' && x <= 100) {
 			if (x == num) {
 				guessCount++;
 				addGuess(guessCount);
